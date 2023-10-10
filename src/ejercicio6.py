@@ -5,9 +5,9 @@
 def calcIva(precio):
     iva = precio * 0.10
     price_sin_iva = precio - iva
-    mensaje = "El precio sin iva es: " + str(price_sin_iva) + "\nEl iva es: " + str(iva)
-    return mensaje
+#    mensaje = "El precio sin iva es: " + str(price_sin_iva) + "\nEl iva es: " + str(iva)
+    return price_sin_iva, iva
 
 if __name__ == "__main__":
     price = float(input("Introduce el precio: "))
-    print(calcIva(price))
+    print("El precio sin iva es: " + str(calcIva(price)[0]) + "\nEl iva es: " + str(calcIva(price)[1]))

@@ -3,7 +3,6 @@
 
 
 def hola(nombre: str):
-
     return "Hola, " + nombre
 
 if __name__ == "__main__":

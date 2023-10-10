@@ -5,9 +5,9 @@
 
 def IMC(kg, m):
     icm = kg / (m)**2
-    return "Tu índice de masa corporal es donde es " + str(icm)
+    return icm
 
 if __name__ == "__main__":
     kilos = float(input("Introduce un peso en kilogramos: "))
     metros = float(input("Introcude tu altura en metros: "))
-    print(IMC(kilos, metros))
+    print("Tu índice de masa corporal es donde es " + str(IMC(kilos, metros)))
